@@ -3,6 +3,11 @@
     @section('title', 'Home')
     @section('content-layout')
         <div class="flex items-center justify-center  ">
+          @session('message')
+          <div>
+            <p>{{session('message')}}</p>
+          </div>
+          @endsession
             <div class="">
                 <h1>Crie seu evento</h1>
                 <a href="#">Crie aqui</a>

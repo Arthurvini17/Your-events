@@ -10,6 +10,6 @@ Route::view("/", "livewire.home")->name("index.home");
 
 Route::get('event-create', [EventController::class, 'index'])->name('index');
 
-Route::post('event-create', [EventController::class, 'submit-event'])->name('submit.event');
+Route::post('event-create', [EventController::class, 'submit_event'])->name('submit.event');
 
 
